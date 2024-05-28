@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(80, 156, 255);
+    font-family: arial;
+}
+
+/*main title styling */
+.box { 
+    background-color: blueviolet;
+    display: block;
+    margin: 10px;
+    padding:10px;
+    border: solid 5px black;
+    text-align: center;
+}
+
+/*main category styling */
+.maincat {
+    color: white;
+    background-color: blueviolet;
+    display: block;
+    width: 400px;
+    margin: 50px;
+    border: solid 2px green;
+    padding: 20px;
+    font-size: 35px;
+}
+
+/*style for sub-cat boxes */
+.subs {
+    border: solid 5px green;
+    display: inline-block;
+    padding: 10px;
+    margin: 50px;
+}
+
+/*styling for images */
+.pantry {
+    display: inline-block;
+    height: 500px;
+    border-radius: 10%;
+    vertical-align: top;
+}
+
+.freezer {
+    display: inline-block;
+    height: 400px;
+    border-radius: 25%;
+    vertical-align: top;
+}

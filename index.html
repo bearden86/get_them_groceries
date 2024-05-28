@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- link to external CSS file -->
+    <link rel="stylesheet" href="styling.css">
+    <!-- requirement to include internal css --> <!-- requirement to change color of main header -->
+    <style>
+        h1 {
+            color: pink;
+        }
+    </style>
     <title>My Grocery List</title> <!-- customize the title (page tab in browser)-->
 </head>
 <body>
-    <h1>My Awesome Grocery List</h1> <!-- major header for webpage -->
-
+    <h1 class="box">My Awesome Grocery List</h1> <!-- major header for webpage -->
     <section> <!-- created to section off main categories -->
-        <h2>Pantry Items</h2> <!-- smaller header for first main grocery category -->
-        <div>
+        <h2 class="maincat">Pantry Items</h2> <!-- smaller header for first main grocery category -->
+        <div class="subs">
             <h3>Canned</h3> <!-- first sub-category, even smaller header -->
             <ul> <!-- unordered bullet list of each item -->
                 <li>Corn</li>
@@ -20,7 +25,7 @@
                 <li>Beans</li>
             </ul>
         </div>
-        <div>
+        <div class="subs">
             <h3>Dry Goods</h3> <!-- second grocery sub-category -->
             <ul>
                 <li>Rice</li>
@@ -29,11 +34,12 @@
                 <li>Pancake Mix</li>
             </ul>
         </div>
-
+        <!-- insert first image into page -->
+        <img class="pantry" src="https://wholefully.com/wp-content/uploads/2022/04/organized-pantry-staples-glass-jars-768x1024.jpg" alt="image of a pantry">
     </section>
     <section> <!-- second main category -->
-        <h2>Freezer Items</h2> <!-- title of category -->
-        <div>
+        <h2 style="color: white" class="maincat">Freezer Items</h2> <!-- example of inline css -->
+        <div class="subs">
             <h3>Veggies</h3> <!-- first sub-category -->
             <ol> <!-- numerical ordered list of each item -->
                 <li>Broccoli</li>
@@ -42,7 +48,7 @@
                 <li>Bell Peppers</li>
             </ol>
         </div>
-        <div>
+        <div class="subs">
             <h3>Snacks</h3> <!-- second sub-category -->
             <ol>
                 <li>Chicken Nuggets</li>
@@ -51,8 +57,8 @@
                 <li>Tator Tots</li>
             </ol>
         </div>
-
+        <!-- insert second image into page -->
+        <img class="freezer" src="https://hips.hearstapps.com/hmg-prod/images/containers-and-plastic-bags-with-frozen-vegetables-royalty-free-image-1592406470.jpg" alt="image of freezer items">
     </section>
-
 </body>
 </html>
