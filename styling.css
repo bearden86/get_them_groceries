@@ -1,36 +1,42 @@
+/*set page background and font defaults */
 body {
-    background-color: rgb(80, 156, 255);
+    background-color: rgba(80, 255, 232, 0.082);
     font-family: arial;
+    font-style:oblique;
 }
 
 /*main title styling */
 .box { 
-    background-color: blueviolet;
-    display: block;
+    background-color: rgba(43, 144, 226, 0.384);
+    display: block; /*block display and no set width to span entire page */
     margin: 10px;
     padding:10px;
     border: solid 5px black;
     text-align: center;
 }
 
-/*main category styling */
+/*main category styling, display in block so that sub-cat boxes are below */
 .maincat {
     color: white;
-    background-color: blueviolet;
+    background-color: rgba(43, 144, 226, 0.384);
     display: block;
-    width: 400px;
+    width: 920px;
     margin: 50px;
-    border: solid 2px green;
+    border: solid 5px green;
     padding: 20px;
     font-size: 35px;
 }
 
 /*style for sub-cat boxes */
 .subs {
+    background-color: rgba(43, 144, 226, 0.384);
     border: solid 5px green;
     display: inline-block;
     padding: 10px;
     margin: 50px;
+    width: 400px;
+    height: 400px;
+    font-size: 30px;
 }
 
 /*styling for images */
